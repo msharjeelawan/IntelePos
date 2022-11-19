@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">IntelePos</string>
+
+    <!--screen names for manifest file-->
+    <string name="scanning_screen">Scan</string>
+    <string name="add_screen">Add Product</string>
+    <string name="detail_screen">Edit Product</string>
+    <string name="setting_screen">Server Url</string>
+    <string name="ScannerSelection_screen">Scanner List</string>
+    <string name="SettingList_screen">Settings</string>
+    <string name="BroadCast_screen">Scanner</string>
+
+    <!--    login screen-->
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="forget_password">Forget Password? Sign Up</string>
+    <string name="contentDescription">logo</string>
+    <string name="settings">Settings</string>
+    <string name="signBtn">Sign In</string>
+    <string name="settingBtn">Sign In</string>
+
+    <!--    edit screen-->
+    <string name="product_id">Id</string>
+    <string name="category">Category</string>
+    <string name="sub_category">Sub Category</string>
+    <string name="name">Name</string>
+    <string name="description">Description</string>
+    <string name="quantity">Quantity</string>
+    <string name="edit_product">Edit Product</string>
+    <string name="save_product">Save</string>
+    <string name="cancel_edit">Cancel</string>
+
+    <!--    setting screen-->
+    <string name="setting_submit">Submit</string>
+    <string name="setting_cancel">Cancel</string>
+    <string name="server_url">192.168.1.1:00</string>
+
+    <!--    add product screen-->
+    <string name="company">Company</string>
+    <string name="store">Store</string>
+    <string name="title">Title</string>
+    <string name="brand">Brand</string>
+    <string name="unit_of_sale">Unit Of Sale</string>
+    <string name="tax">Tax(Unit Of Sale)</string>
+    <string name="barcode">Prod Code</string>
+    <string name="p_price">Purchase Price</string>
+    <string name="s_price">Sale Price</string>
+    <string name="min_stock">Min Stock</string>
+    <string name="p_points">Prod Points</string>
+    <string name="web_Price">Web Price</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="yes">yes</string>
+    <string name="no">no</string>
+
+    <!--    selection screen-->
+    <string name="camera">Camera Scanner</string>
+    <string name="broadcast">External Scanner</string>
+    <!--    broadcast screen-->
+    <string name="scan">Scan</string>
+    <string name="clear">Reset</string>
+    <string name="continue_scan">Continue Scan</string>
+    <string name="mode_callback">SDK Callback</string>
+    <string name="mode_broadcast">SDK BroadCast</string>
+    <string name="mode_callback2">SDK Callback 2</string>
+    <string name="sdk_error">The SDK is not supported on this system</string>
+
+    <!--    Scanner Selection screen-->
+    <string name="Camera_Scanner">Camera Scanner</string>
+    <string name="External_Scanner">External Scanner</string>
+</resources>

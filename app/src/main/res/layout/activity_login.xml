@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="30dp"
+    android:background="@drawable/splash_bg"
+
+    android:paddingVertical="50dp"
+    android:fillViewport="true"
+    tools:context=".LoginActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="0dp"
+            android:src="@drawable/logo"
+            android:paddingHorizontal="20dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/contentDescription"
+            app:layout_constraintVertical_weight="2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/view1" />
+
+        <View android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+
+            app:layout_constraintVertical_weight="1"
+            android:layout_weight="1"
+            app:layout_constraintTop_toBottomOf="@id/logo"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/linear"
+            />
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            app:layout_constraintVertical_weight="3.0"
+            app:layout_constraintTop_toBottomOf="@+id/view1"
+            app:layout_constraintBottom_toTopOf="@+id/setting"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="@string/username_hint"
+                android:importantForAutofill="no"
+                android:inputType="textEmailAddress"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/custom_mail_icon"
+                android:drawableStart="@drawable/custom_mail_icon"
+                android:drawablePadding="10dp"
+                android:paddingHorizontal="15dp"
+                android:background="@drawable/custom_edit_text" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="@string/password_hint"
+                android:importantForAutofill="no"
+                android:inputType="textPassword"
+                android:layout_marginTop="20dp"
+                android:drawablePadding="10dp"
+                android:paddingHorizontal="15dp"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/custom_password_icon"
+                android:drawableStart="@drawable/custom_password_icon"
+                android:background="@drawable/custom_edit_text" />
+
+            <Button
+                android:id="@+id/sign_in"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="@string/signBtn"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_button_bg"
+                app:backgroundTint="@color/orange"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/forget_password"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="@string/forget_password"
+                android:textColor="@color/white"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/setting"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.4"
+            android:layout_gravity="right"
+            app:backgroundTint="@color/light_grey"
+            android:text="@string/settings"
+            android:background="@drawable/custom_button_bg"
+            android:layout_marginBottom="0dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintVertical_weight="0.5"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linear"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.core.widget.NestedScrollView>

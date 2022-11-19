@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="20dp"
+        >
+
+        <TextView
+            android:id="@+id/barcode"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="@string/product_id"
+            android:gravity="center_vertical"
+            app:drawableLeftCompat="@drawable/bar_code"
+            app:drawableStartCompat="@drawable/bar_code"
+            android:drawablePadding="10dp"
+            android:paddingHorizontal="15dp"
+            android:background="@drawable/custom_edit_text"
+            android:layout_marginTop="10dp"/>
+
+        <Spinner
+            android:id="@+id/category"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:hint="@string/category"
+            android:drawableLeft="@drawable/custom_mail_icon"
+            android:drawableStart="@drawable/custom_mail_icon"
+            android:drawablePadding="10dp"
+            android:paddingHorizontal="15dp"
+            android:background="@drawable/custom_edit_text"
+            android:layout_marginTop="10dp"/>
+
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/sub_category"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:hint="@string/sub_category"
+            android:drawableLeft="@drawable/custom_mail_icon"
+            android:drawableStart="@drawable/custom_mail_icon"
+            android:drawablePadding="10dp"
+            android:paddingHorizontal="15dp"
+            android:background="@drawable/custom_edit_text"
+            android:layout_marginTop="10dp"/>
+
+<!--        android:background="@drawable/custom_edit_text"-->
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:boxCornerRadiusTopStart="20dp"
+            app:boxCornerRadiusTopEnd="20dp"
+            app:boxCornerRadiusBottomStart="20dp"
+            app:boxCornerRadiusBottomEnd="20dp"
+            android:hint="Title">
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:hint="@string/name"
+                android:inputType="text"
+                android:importantForAutofill="no"
+                android:drawableLeft="@drawable/custom_mail_icon"
+                android:drawableStart="@drawable/custom_mail_icon"
+                android:drawablePadding="10dp"
+                android:paddingHorizontal="15dp"
+                android:layout_marginTop="10dp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:boxCornerRadiusTopStart="20dp"
+            app:boxCornerRadiusTopEnd="20dp"
+            app:boxCornerRadiusBottomStart="20dp"
+            app:boxCornerRadiusBottomEnd="20dp"
+            android:hint="Description">
+
+            <EditText
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:hint="@string/description"
+                android:inputType="text"
+                android:importantForAutofill="no"
+                android:drawableLeft="@drawable/description"
+                android:drawableStart="@drawable/description"
+                android:drawablePadding="10dp"
+                android:paddingHorizontal="15dp"
+                android:layout_marginTop="10dp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:boxCornerRadiusTopStart="20dp"
+            app:boxCornerRadiusTopEnd="20dp"
+            app:boxCornerRadiusBottomStart="20dp"
+            app:boxCornerRadiusBottomEnd="20dp"
+            android:hint="Quantity">
+
+            <EditText
+                android:id="@+id/quantity"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:layout_weight="1"
+                android:hint="@string/quantity"
+                android:importantForAutofill="no"
+                android:drawableStart="@drawable/quantity"
+                android:drawableLeft="@drawable/quantity"
+                android:drawablePadding="10dp"
+                android:paddingHorizontal="15dp"
+                android:layout_marginTop="10dp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:boxCornerRadiusTopStart="20dp"
+            app:boxCornerRadiusTopEnd="20dp"
+            app:boxCornerRadiusBottomStart="20dp"
+            app:boxCornerRadiusBottomEnd="20dp"
+            android:hint="Web Price">
+
+            <EditText
+                android:id="@+id/update_web_price"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="numberDecimal"
+                android:layout_weight="1"
+                android:hint="@string/web_Price"
+                android:importantForAutofill="no"
+                android:drawableStart="@drawable/web"
+                android:drawableLeft="@drawable/web"
+                android:drawablePadding="10dp"
+                android:paddingHorizontal="15dp"
+                android:layout_marginTop="10dp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/filledTextField"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:boxCornerRadiusTopStart="20dp"
+            app:boxCornerRadiusTopEnd="20dp"
+            app:boxCornerRadiusBottomStart="20dp"
+            app:boxCornerRadiusBottomEnd="20dp"
+            android:hint="Sale Price">
+
+            <EditText
+                android:id="@+id/update_item_price"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="numberDecimal"
+                android:layout_weight="1"
+                android:hint="@string/s_price"
+                android:importantForAutofill="no"
+                android:drawableStart="@drawable/pound"
+                android:drawableLeft="@drawable/pound"
+                android:drawablePadding="10dp"
+                android:paddingHorizontal="15dp"
+                android:layout_marginTop="10dp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="10dp"
+                android:layout_weight="1"
+                android:text="Show On Till"/>
+
+            <RadioGroup
+                android:id="@+id/update_show_on_till"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:orientation="horizontal"
+                android:layout_weight="3"
+                android:layout_marginTop="10dp">
+
+                <RadioButton
+                    android:id="@+id/update_show_on_till_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="10dp"
+                    android:text="@string/yes"/>
+
+                <RadioButton
+                    android:id="@+id/update_show_on_till_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="10dp"
+                    android:text="@string/no"/>
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/edit_product"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/edit_product"
+            android:background="@drawable/custom_button_bg"
+            app:backgroundTint="@color/grey"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:id="@+id/save_product"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/save_product"
+            android:background="@drawable/custom_button_bg"
+            app:backgroundTint="@color/orange"
+            android:layout_marginTop="10dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/cancel_edit"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:backgroundTint="@color/white"
+            android:text="@string/cancel_edit"
+            app:strokeWidth="1dp"
+            app:cornerRadius="20dp"
+            app:strokeColor="@color/orange"
+            android:textColor="@color/orange"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+
+</ScrollView>

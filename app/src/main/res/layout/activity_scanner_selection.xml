@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ScannerSelectionActivity">
+
+    <RadioGroup
+        android:id="@+id/scannerSelection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/cameraScanner"
+            android:text="@string/Camera_Scanner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:id="@+id/externalScanner"
+            android:text="@string/External_Scanner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/save_scanner_selection"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/save_product"
+        android:background="@drawable/custom_button_bg"
+        app:backgroundTint="@color/orange"
+        android:layout_marginTop="10dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/cancel_scanner_selection"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:backgroundTint="@color/white"
+        android:text="@string/cancel_edit"
+        app:strokeWidth="1dp"
+        app:cornerRadius="20dp"
+        app:strokeColor="@color/orange"
+        android:textColor="@color/orange"
+        android:layout_marginTop="10dp" />
+
+</LinearLayout>

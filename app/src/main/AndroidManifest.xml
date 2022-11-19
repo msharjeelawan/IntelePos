@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.intelicle.inteliclepos">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<!--    android:roundIcon="@mipmap/app_icon"-->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.InteliclePos"
+        android:usesCleartextTraffic="true">
+
+       <!-- first screen -->
+        <activity
+            android:name=".SplashScreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/scanning_screen"
+            android:screenOrientation="portrait" >
+
+        </activity>
+        <activity
+            android:name=".AddProductActivity"
+            android:label="@string/add_screen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProductDetailActivity"
+            android:label="@string/detail_screen"
+            android:screenOrientation="portrait" />
+
+            <!--setting list parent screen -->
+        <activity
+            android:name=".SettingList"
+            android:label="@string/SettingList_screen"
+            android:parentActivityName=".LoginActivity"
+            android:screenOrientation="portrait"/>
+        <!--childs of setting list screen-->
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/setting_screen"
+            android:parentActivityName=".SettingList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ScannerSelectionActivity"
+            android:label="@string/ScannerSelection_screen"
+            android:parentActivityName=".SettingList"
+            android:screenOrientation="portrait"/>
+
+
+        <activity
+            android:name=".BroadCastActivity"
+            android:label="@string/BroadCast_screen"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".SelectionActivity"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

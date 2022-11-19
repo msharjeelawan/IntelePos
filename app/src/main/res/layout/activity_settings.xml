@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="30dp"
+    android:gravity="center"
+    tools:context=".SettingsActivity">
+
+    <EditText
+        android:id="@+id/server_url"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:importantForAutofill="no"
+        android:background="@drawable/custom_edit_text"
+        android:paddingHorizontal="15dp"
+        android:inputType="textUri"
+        android:drawableLeft="@drawable/server"
+        android:drawableStart="@drawable/server"
+        android:drawablePadding="10dp"
+        android:hint="@string/server_url"
+        android:layout_marginTop="0dp"
+         />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/url_submit"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/custom_button_bg"
+        app:backgroundTint="@color/orange"
+        android:text="@string/setting_submit"
+        android:layout_marginTop="40dp"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/url_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textColor="@color/orange"
+        app:backgroundTint="@color/white"
+        android:text="@string/setting_cancel"
+        app:strokeWidth="1dp"
+        app:cornerRadius="20dp"
+        app:strokeColor="@color/orange"
+        />
+
+</LinearLayout>
